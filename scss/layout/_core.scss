@@ -1,3 +1,10 @@
+:root {
+  --tabler-border-color: #{$border-color};
+  --tabler-card-bg: #{$white};
+
+  --tabler-border-radius: #{$border-radius};
+}
+
 // stylelint-disable property-no-vendor-prefix
 html {
   height: 100%;

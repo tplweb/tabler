@@ -7,6 +7,10 @@
 
 'use strict';
 
+const postcssCustomProperties = require('postcss-custom-properties'),
+  autoprefixer = require('autoprefixer');
+
+
 module.exports = ctx => ({
   map: ctx.file.dirname.includes('examples') ?
     false :
@@ -15,9 +19,12 @@ module.exports = ctx => ({
       annotation: true,
       sourcesContent: true
     },
-  plugins: {
-    autoprefixer: {
+  plugins: [
+    autoprefixer({
       cascade: false
-    }
-  }
+    }),
+    postcssCustomProperties({
+      preserve: true
+    })
+  ]
 });
