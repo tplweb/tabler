@@ -91,13 +91,13 @@
   "dependencies": {
     "apexcharts": "3.10.0",
     "autosize": "4.0.2",
-    "bootstrap": "twbs/bootstrap#9ee9b8a",
-    "chart.js": "^2.8.0",
+    "bootstrap": "twbs/bootstrap#819f922",
+    "chart.js": "2.8.0",
     "imask": "5.2.1",
     "jquery": "3.4.1",
     "jqvmap": "1.5.1",
     "peity": "3.3.0",
-    "selectize": "^0.12.6"
+    "selectize": "0.12.6"
   },
   "bundlesize": [
     {
